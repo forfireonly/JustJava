@@ -13,61 +13,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/java"
-        android:paddingTop="50dp"
-        android:text="\nQuantity"
+        android:paddingTop="@dimen/paddingTop4"
+        android:text="@string/nquantity"
         android:textAllCaps="true"
+        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="15sp" />
 
     <Button
 
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/button"
+        android:layout_height="@dimen/button"
         android:onClick="increment"
-        android:text="+"
+        android:text="@string/Button2"
+        android:textSize="@dimen/text"
         android:textAllCaps="true" />
 
 
     <TextView
-        android:id="@+id/quantity-text-view"
+        android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:paddingLeft="@dimen/Left1padding"
+        android:text="@string/_0"
+        android:textColor="@color/color2"
+        android:textStyle="bold"
+        android:textSize="@dimen/Text2" />
 
     <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/button"
+        android:layout_height="@dimen/button"
         android:onClick="decriment"
-        android:text="-"
+        android:text="@string/firtstbutton"
+        android:textStyle="bold"
+        android:textSize="@dimen/Text3"
         android:textAllCaps="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/banknotes"
-        android:paddingLeft="16dp"
-        android:paddingTop="10dp"
-        android:text="\nYour Total"
+        android:paddingLeft="@dimen/leftpadding2"
+        android:paddingTop="@dimen/paddingTop"
+        android:text="@string/nyour_total"
+        android:textStyle="bold"
         android:textAllCaps="true"
-        android:textSize="15sp"
-        android:textColor="#000000" />
+        android:textSize="@dimen/Text5"
+        android:textColor="@color/collor2" />
 
     <TextView
         android:id="@+id/price_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:paddingLeft="15dp"
-        
-        android:text="$0"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingLeft="@dimen/paddingLeft3"
+        android:textStyle="bold"
+        android:text="@string/dif"
+        android:textColor="@color/color"
+        android:textSize="@dimen/text6" />
 
     <ImageView
-        android:id="@+id/iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -76,11 +81,10 @@
 
 
     <ToggleButton
-        android:id="@+id/togglebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOff="Place Your Order"
-        android:textOn="Thank You For Order" />
+        android:textOff="@string/place_your_order"
+        android:textOn="@string/thank_you_for_order" />
 
 
 </LinearLayout>
